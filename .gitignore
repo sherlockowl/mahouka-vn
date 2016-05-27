@@ -1,0 +1,3 @@
+*.ignore
+/.idea
+/server/node_modules

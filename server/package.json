@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "cookie-parser": "^1.4.3",
+    "ect": "^0.5.9",
+    "express": "^4.13.4",
+    "moment": "^2.13.0",
+    "morgan": "^1.7.0",
+    "q": "^1.4.1",
+    "underscore": "^1.8.3"
+  }
+}
