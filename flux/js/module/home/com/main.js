@@ -1,9 +1,10 @@
+'use strict';
 var React = require('react');
 
 var Main = React.createClass({
     render() {
         return (
-            <div>
+            <div className="loader">
 
             </div>
         )
