@@ -1,4 +1,9 @@
-exports.config = {
-    PORT: '3000',
+module.exports = {
+    APP: {
+        PORT: '3000'
+    },
+    ENVIRONMENT: {
+        DEV: true
+    }
 
-}
+};

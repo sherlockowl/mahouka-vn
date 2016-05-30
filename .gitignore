@@ -1,3 +1,7 @@
 *.ignore
 /.idea
+/node_modules
+/flux/node_modules
+/npm-debug.log
+/server/assets
 /server/node_modules
