@@ -7,7 +7,6 @@ var Top = React.createClass({
         return (
             <div className="row top-menu">
                 <Top.Left />
-                <Top.Right />
             </div>
         )
     }
