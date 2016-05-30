@@ -2,6 +2,8 @@
 /.idea
 /node_modules
 /flux/node_modules
+/server/log
+/flux/css/style.css
 /npm-debug.log
 /server/assets
 /server/node_modules
