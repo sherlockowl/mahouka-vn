@@ -7,6 +7,7 @@ var Top = React.createClass({
         return (
             <div className="row top-menu">
                 <Top.Left />
+                <Top.Right />
             </div>
         )
     }
@@ -17,9 +18,7 @@ Top.Left = React.createClass({
         return (
             <div className="top-left col-lg-6">
                 <h1>
-                    <img src="images/favicon.png" className="logo-img"/>
-                    <img src="images/logo.png"/>
-                    <span>Anime</span>
+                    {/**/}
                 </h1>
             </div>
         )
@@ -30,8 +29,12 @@ Top.Right = React.createClass({
     render() {
         return (
             <div className="top-right col-lg-6">
-                <div className="dropdown pull-right">
-                    <button className="btn btn-default"><i className="fa fa-power-off"/> Logout</button>
+                <div className="dropdown">
+                    <button className="btn btn-default"><i className="fa fa-home"/> Mahouka VN</button>
+                    <span>&nbsp;</span>
+                    <button className="btn btn-default"><i className="fa fa-film"/> Film</button>
+                    <span>&nbsp;</span>
+                    <button className="btn btn-default"><i className="fa fa-xing"/> Anime</button>
                 </div>
             </div>
         )

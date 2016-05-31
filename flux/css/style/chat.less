@@ -2,7 +2,7 @@
   bottom: 0;
   right: 0;
   position: fixed;
-  padding: 1em 0 0 1em;
+  padding: 1em 0.5em 0 1em;
 }
 
 .chat-header {
@@ -10,14 +10,17 @@
   color: white;
   height: 3em;
   background-color: #2e6da4;
+  border-radius: 5px 5px 0 0;
   padding: 1em;
 }
 
 .chat-body {
-  overflow: scroll-y;
+  overflow-y: scroll;
   padding: 2px;
   background-color: white;
   color: black;
+  min-height: 600px;
+  height: 600px;
   padding: 1em;
 }
 
@@ -29,4 +32,8 @@
   border-top: 1px solid black;
   padding: 1em;
   background-color: white;
+}
+
+.chat-footer textarea{
+  min-width: 250px;
 }

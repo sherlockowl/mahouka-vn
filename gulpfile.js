@@ -22,14 +22,20 @@ gulp.task('html', function () {
 
 gulp.task('js', function () {
     browserify(SRC_PATH + '/js/app.js')
-    .transform('reactify', {stripTypes: true, es6: true})
-    .bundle()
-    .pipe(source('app.js'))
-    .pipe(streamify(uglify()))
-    .pipe(gulp.dest(DEST_PATH + '/js'))
-    .on('end', function () {
-        console.log('>>> Js ok');
-    });
+        .transform('reactify', {stripTypes: true, es6: true})
+        .bundle()
+        .on('error', function (err) {
+            console.log(err);
+        })
+        .pipe(source('app.js'))
+        .pipe(streamify(uglify()))
+        .pipe(gulp.dest(DEST_PATH + '/js'))
+        .on('end', function () {
+            console.log('>>> Js ok');
+        })
+        .on('error', function (err) {
+            console.log(err);
+        });
 });
 
 gulp.task('css', function () {
