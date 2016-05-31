@@ -9,6 +9,7 @@ var Video = React.createClass({
                 <div className="col-lg-3"></div>
                 <div className="col-lg-6">
                     <div className="row">
+                        <span className="video-title">Film Title Here</span>
                         <video controls autoPlay className="col-lg-12 video">
                             <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
                         </video>

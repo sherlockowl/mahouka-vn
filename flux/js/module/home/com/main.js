@@ -9,7 +9,7 @@ var Chat = require('../../chat/com/chat');
 var Main = React.createClass({
     render() {
         return (
-            <div className="main">
+            <div className="main container-fluid">
                 <TopMenu/>
                 <VideoX />
                 <Chat />
