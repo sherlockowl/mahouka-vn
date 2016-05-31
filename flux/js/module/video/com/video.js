@@ -6,10 +6,15 @@ var Video = React.createClass({
     render() {
         return (
             <div className="row">
-                <video controls>
-                    <source src="video.mp4" type="video/mp4" />
-                </video>
-                This browser is not support
+                <div className="col-lg-3"></div>
+                <div className="col-lg-6">
+                    <div className="row">
+                        <video controls autoPlay className="col-lg-12 video">
+                            <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div className="col-lg-3"></div>
             </div>
         )
     }
