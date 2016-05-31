@@ -28,7 +28,7 @@ gulp.task('js', function () {
             console.log(err);
         })
         .pipe(source('app.js'))
-        .pipe(streamify(uglify()))
+        //.pipe(streamify(uglify()))
         .pipe(gulp.dest(DEST_PATH + '/js'))
         .on('end', function () {
             console.log('>>> Js ok');
