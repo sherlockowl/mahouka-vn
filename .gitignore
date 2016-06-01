@@ -6,4 +6,5 @@
 /flux/css/style.css
 /npm-debug.log
 /server/assets
+/socket_service/node_modules
 /server/node_modules

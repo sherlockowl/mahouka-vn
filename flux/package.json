@@ -9,6 +9,7 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-router": "^2.4.1",
+    "socket.io-client": "^1.4.5",
     "underscore": "^1.8.3"
   }
 }

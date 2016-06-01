@@ -3,7 +3,22 @@
 var React = require('react');
 
 var Video = React.createClass({
+    onUpdate() {
+      this.forceUpdate();
+    },
+    componentWillMount() {
+        var client = require('../client');
+    },
+    componentWillUnmount() {
+        var client = require('../client');
+        client.disconnect();
+    },
     render() {
+        if(true) {
+            return (
+                <div></div>
+            )
+        }
         return (
             <div className="row">
                 <div className="col-lg-2">
